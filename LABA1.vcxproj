@@ -127,18 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="avt.cpp" />
+    <ClCompile Include="car.cpp" />
     <ClCompile Include="Cargo_carrier.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="mash.cpp" />
-    <ClCompile Include="Sam.cpp" />
+    <ClCompile Include="train.cpp" />
+    <ClCompile Include="airplane.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="avt.h" />
+    <ClInclude Include="car.h" />
     <ClInclude Include="Cargo_carrier.h" />
     <ClInclude Include="keeper.h" />
-    <ClInclude Include="mash.h" />
-    <ClInclude Include="Sam.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="train.h" />
+    <ClInclude Include="airplane.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

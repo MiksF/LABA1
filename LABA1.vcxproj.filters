@@ -18,13 +18,13 @@
     <ClCompile Include="Main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="avt.cpp">
+    <ClCompile Include="car.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
-    <ClCompile Include="mash.cpp">
+    <ClCompile Include="train.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
-    <ClCompile Include="Sam.cpp">
+    <ClCompile Include="airplane.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
     <ClCompile Include="Cargo_carrier.cpp">
@@ -32,13 +32,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="avt.h">
+    <ClInclude Include="car.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="mash.h">
+    <ClInclude Include="train.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Sam.h">
+    <ClInclude Include="airplane.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Cargo_carrier.h">
@@ -46,6 +46,9 @@
     </ClInclude>
     <ClInclude Include="keeper.h">
       <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

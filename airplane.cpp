@@ -1,4 +1,4 @@
-#include "Sam.h"
+#include "airplane.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -8,10 +8,21 @@ Airplane::Airplane() {
 	cout << "Вызов конструктора по умолчанию для класса Airplane" << endl << endl;
 	type = "";
 	name = "";
-	volume = "";
+	volume = 0;
 	dimensions = "";
 	cities = "";
 }
+
+Airplane::Airplane(string type, string name, double volume, string dimensions, string cities, Airplane& obj) {
+	setlocale(LC_ALL, "Russian");
+	cout << "Вызов конструктора с параметром для класса Airplane" << endl << endl;
+	obj.type = type;
+	obj.name = name;
+	obj.volume = volume;
+	obj.dimensions = dimensions;
+	obj.cities = cities;
+}
+
 
 Airplane::Airplane(const Airplane& other) {
 	setlocale(LC_ALL, "Russian");
@@ -75,14 +86,9 @@ istream& operator>>(istream& in, Airplane& obj) {
 
 	while (1) {
 		cout << "Объем перевозимого груза: ";
-		getchar();
-		getline(cin, obj.volume);
-		if (cin.fail() || obj.volume < 0) {
-			cout << "Некорректные данные!!!" << endl;
-			cin.clear();
-			cin.ignore(10000, '\n');
-			continue;
-		}
+		cin >>obj.volume;
+		if (obj.volume < 0) cout << "Некорректные данные!!!" << endl << endl;
+		else break;
 	}
 
 	cout << "Габариты: ";

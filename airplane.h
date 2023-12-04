@@ -8,11 +8,12 @@ class Airplane : public Cargo_carrier {
 private:
 	string type;          //Тип
 	string name;          //Наименование
-	string volume;        //Объем перевозимого груза
+	double volume;        //Объем перевозимого груза
 	string dimensions;    //Габариты
 	string cities;        //Города которые посещает
 public:
 	Airplane();
+	Airplane(string type, string name, double volume, string dimensions, string cities, Airplane& obj);
 	~Airplane();
 	Airplane(const Airplane&);
 	void p() override;
